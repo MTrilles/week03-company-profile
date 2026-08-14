@@ -99,9 +99,11 @@
         font-size: 1.15rem; 
     }
     
+    /* Added Gradient Background to Featured Services */
     .services-section { 
         padding: 80px 20px; 
-        background: transparent; 
+        background: linear-gradient(180deg, rgba(15, 23, 42, 0) 0%, rgba(37, 99, 235, 0.12) 50%, rgba(15, 23, 42, 0) 100%); 
+        transition: background 0.3s ease;
     }
     
     .services-section h2 { 

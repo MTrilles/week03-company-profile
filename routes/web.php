@@ -1,19 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CompanyController;
 
-Route::get('/', function () {
-    return view('pages.home');
-});
-
-Route::get('/about', function () {
-    return view('pages.about');
-});
-
-Route::get('/services', function () {
-    return view('pages.services');
-});
-
-Route::get('/contact', function () {
-    return view('pages.contact');
-});
+Route::get('/', [CompanyController::class, 'home']);
+Route::get('/about', [CompanyController::class, 'about']);
+Route::get('/services', [CompanyController::class, 'services']);
+Route::get('/contact', [CompanyController::class, 'contact']);
